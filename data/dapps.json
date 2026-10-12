@@ -9,5 +9,16 @@
       "navigation"
     ],
     "featured": true
+  },
+    {
+    "id": "brag",
+    "name": "Brag",
+    "description": "P2P gambling games",
+    "url": "https://brag.dappnav.org/",
+    "logo": "public/logs/brag.jpg",
+    "tags": [
+      "gambling"
+    ],
+    "featured": false
   }
 ]
