@@ -4,6 +4,6 @@
     "description": "Sui 生态的流动性协议，提供资产存入、借贷与收益策略，让链上资产拥有更多可能。",
     "url": "https://app.naviprotocol.io/", "logo": "public/logos/navi.png",
     "tags": ["借贷", "流动性"], "featured": true, "order": 1, "addedAt": "2026-10-12"
-  },
+  }
  
 ]
