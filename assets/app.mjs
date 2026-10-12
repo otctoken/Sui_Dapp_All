@@ -4,17 +4,17 @@ const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;',
 
 function card(app) {
   return `<article class="app-card${app.featured ? ' featured' : ''}">
-    ${app.featured ? '<div class="featured-label"><span aria-hidden="true">✦</span> 精选 <span class="featured-line" aria-hidden="true"></span></div>' : ''}
+    ${app.featured ? '<div class="featured-label"><span aria-hidden="true">✦</span> chosen <span class="featured-line" aria-hidden="true"></span></div>' : ''}
     <div class="card-top"><div class="app-logo"><img src="${escape(app.logo)}" alt="${escape(app.name)} Logo" width="48" height="48" data-fallback="${escape(app.name.charAt(0))}"></div><div class="card-title"><h2>${escape(app.name)}</h2></div></div>
     <p class="card-description">${escape(app.description)}</p>
-    <a class="card-link" href="${escape(app.url)}" target="_blank" rel="noopener noreferrer" aria-label="访问 ${escape(app.name)}，在新标签页打开"><span>访问应用</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+    <a class="card-link" href="${escape(app.url)}" target="_blank" rel="noopener noreferrer" aria-label="get ${escape(app.name)}，open"><span>dapp</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
   </article>`;
 }
 
 async function load() {
   $('error-state').hidden = true;
   $('status').hidden = false;
-  $('status').textContent = '正在加载应用…';
+  $('status').textContent = 'loading…';
   $('app-grid').setAttribute('aria-busy', 'true');
   try {
     const readJSON = async path => {
@@ -30,7 +30,7 @@ async function load() {
       document.querySelector('.brand img').src = config.logo;
       document.querySelector('link[rel="icon"]').href = config.logo;
     }
-    if (config.name) { document.title = `${config.name} · Sui 生态导航`; document.querySelector('.brand img').alt = config.name; }
+    if (config.name) { document.title = `${config.name} · Sui Nav`; document.querySelector('.brand img').alt = config.name; }
     if (config.description) document.querySelector('meta[name="description"]').content = config.description;
     $('app-grid').innerHTML = apps.map(card).join('');
     $('app-grid').querySelectorAll('img').forEach(img => {
@@ -38,7 +38,7 @@ async function load() {
       img.addEventListener('error', fallback, { once: true });
       if (img.complete && !img.naturalWidth) fallback();
     });
-    $('status').textContent = apps.length ? '' : '暂无应用';
+    $('status').textContent = apps.length ? '' : 'null';
     $('status').hidden = apps.length > 0;
   } catch (error) {
     console.error('DappNav catalog failed:', error);
