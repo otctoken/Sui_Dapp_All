@@ -1,0 +1,9 @@
+{
+  "name": "DappNav",
+  "description": "发现、收藏并连接 Sui 生态中的应用。你的 Web3 探索，从这里开始。",
+  "logo": "public/logo.png",
+  "telegram": "https://t.me/Sui_Nav",
+  "x": "https://x.com/SuiSgGame",
+  "github": "https://github.com/otctoken/Sui_Dapp_All",
+  "editUrl": "https://github.com/otctoken/Sui_Dapp_All/edit/main/data/dapps.json"
+}

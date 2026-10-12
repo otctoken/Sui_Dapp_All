@@ -1,0 +1,56 @@
+[
+  {
+    "id": "navi", "name": "NAVI Protocol", "category": "lending",
+    "description": "Sui 生态的流动性协议，提供资产存入、借贷与收益策略，让链上资产拥有更多可能。",
+    "url": "https://app.naviprotocol.io/", "logo": "public/logos/navi.png",
+    "tags": ["借贷", "流动性"], "featured": true, "order": 1, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "suilend", "name": "Suilend", "category": "lending",
+    "description": "由 Save 团队打造的 Sui 借贷协议。通过直观的市场界面，探索数字资产的存入与借出。",
+    "url": "https://suilend.fi/", "logo": "public/logos/suilend.png",
+    "tags": ["借贷", "DeFi"], "featured": true, "order": 2, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "cetus", "name": "Cetus", "category": "trading",
+    "description": "基于集中流动性的去中心化交易平台，支持代币兑换、流动性池与链上交易工具。",
+    "url": "https://app.cetus.zone/", "logo": "public/logos/cetus.ico",
+    "tags": ["DEX", "流动性池"], "featured": true, "order": 3, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "scallop", "name": "Scallop", "category": "lending",
+    "description": "Sui 原生的货币市场，整合借贷、资产管理与多种 DeFi 工具，连接链上金融场景。",
+    "url": "https://app.scallop.io/", "logo": "public/logos/scallop.png",
+    "tags": ["借贷", "货币市场"], "featured": false, "order": 4, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "aftermath", "name": "Aftermath", "category": "staking",
+    "description": "集合兑换聚合、SUI 流动性质押和流动性池的应用，在一个入口探索多种链上工具。",
+    "url": "https://aftermath.finance/", "logo": "public/logos/aftermath.ico",
+    "tags": ["流动性质押", "聚合器"], "featured": false, "order": 5, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "bluefin", "name": "Bluefin", "category": "trading",
+    "description": "构建于 Sui 的去中心化交易平台，提供现货与永续合约等链上交易体验。",
+    "url": "https://bluefin.io/", "logo": "public/logos/bluefin.png",
+    "tags": ["交易", "永续合约"], "featured": false, "order": 6, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "suins", "name": "SuiNS", "category": "tools",
+    "description": "用容易记住的 .sui 名称替代复杂地址。发现属于你的链上名称与数字身份。",
+    "url": "https://suins.io/", "logo": "public/logos/suins.png",
+    "tags": ["域名", "数字身份"], "featured": false, "order": 7, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "slush", "name": "Slush", "category": "wallet",
+    "description": "面向 Sui 生态的钱包入口，管理数字资产、连接应用，让日常链上操作更直观。",
+    "url": "https://slush.app/", "logo": "public/logos/slush.svg",
+    "tags": ["钱包", "资产管理"], "featured": false, "order": 8, "addedAt": "2026-10-12"
+  },
+  {
+    "id": "suivision", "name": "SuiVision", "category": "tools",
+    "description": "Sui 区块浏览器。查询交易、地址、代币与网络数据，了解每一笔链上活动。",
+    "url": "https://suivision.xyz/", "logo": "public/logos/suivision.png",
+    "tags": ["浏览器", "链上数据"], "featured": false, "order": 9, "addedAt": "2026-10-12"
+  }
+]
