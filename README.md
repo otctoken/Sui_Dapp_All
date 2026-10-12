@@ -1,6 +1,6 @@
 # DappNav
 
-面向 Sui 生态的响应式 DApp 导航。使用提供的 DappNav Logo，内置 NAVI、Suilend、Cetus 等 9 个项目。
+面向 Sui 生态的响应式 DApp 导航。使用提供的 DappNav Logo，项目内容由 data/dapps.json 维护。
 
 纯 HTML / CSS / JavaScript，无运行时依赖、数据库或管理后台。全站项目内容来自 GitHub 中的 JSON 文件，部署后所有访客看到同一份目录。页面顶部仅展示 Logo、X 和 TG 链接，下面直接排列 DApp 卡片，支持手机、平板和桌面自适应。
 
@@ -15,14 +15,11 @@
 {
   "id": "my-dapp",
   "name": "My DApp",
-  "category": "tools",
   "description": "这里填写项目简介。",
   "url": "https://example.com/",
   "logo": "public/logos/my-dapp.png",
   "tags": ["工具", "Sui"],
-  "featured": false,
-  "order": 10,
-  "addedAt": "2026-10-12"
+  "featured": false
 }
 ```
 
@@ -31,15 +28,12 @@
 | id | 唯一标识，只能包含小写字母、数字和连字符 |
 | name | 项目名称，最多 80 字符 |
 | description | 简介，最多 240 字符 |
-| category | `lending` 借贷、`trading` 交易、`staking` 质押、`wallet` 钱包、`tools` 基础设施、`navigation` 导航 |
 | url | 项目 HTTPS 地址，点击后在新标签页打开 |
 | logo | `public/logos/文件名.png` 或 `public/文件名.png`，支持 PNG/JPG/SVG/WebP/ICO，也支持 HTTPS 图片地址 |
 | tags | 最多 4 个标签，每个最多 20 字符 |
-| featured | `true` 为编辑精选，展示动态渐变边框、光晕和精选徽标，默认排序靠前；`false` 为普通卡片 |
-| order | 数字，越小越靠前（精选优先） |
-| addedAt | 添加日期 `YYYY-MM-DD`，用于记录收录时间 |
+| featured | `true` 为编辑精选，展示动态渐变边框、光晕和精选徽标；不影响显示顺序；`false` 为普通卡片 |
 
-删除项目时删除整个对象即可。添加新分类时，同时修改 [assets/catalog.mjs](assets/catalog.mjs) 中的 `categories`。
+删除项目时删除整个对象即可。页面严格按 JSON 数组中的先后顺序排列；调整整个对象的位置即可调整展示顺序，featured 不影响排序。
 
 ## 网站配置
 
