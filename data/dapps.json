@@ -48,7 +48,7 @@
     "name": "Sui transfer",
     "description": "Transfer any object or coin",
     "url": "https://transfer.dappnav.org/",
-    "logo": "transfer.png",
+    "logo": "public/logos/transfer.png",
     "tags": [
       "navigation"
     ],
