@@ -5,6 +5,7 @@ export const categories = [
   { id: 'staking', name: '质押', icon: 'layers' },
   { id: 'wallet', name: '钱包', icon: 'wallet' },
   { id: 'tools', name: '基础设施', icon: 'blocks' },
+  { id: 'navigation', name: '导航', icon: 'grid' },
 ];
 
 export function safeHttps(value) {
@@ -23,7 +24,7 @@ export function validateCatalog(input) {
     if (typeof app.description !== 'string' || !app.description.trim() || app.description.length > 240) throw new Error(`${app.id}: 简介无效`);
     if (!categories.some(c => c.id !== 'all' && c.id === app.category)) throw new Error(`${app.id}: 分类无效`);
     if (!safeHttps(app.url)) throw new Error(`${app.id}: 请使用有效的 HTTPS 链接`);
-    if (typeof app.logo !== 'string' || !(safeHttps(app.logo) || /^public\/logos\/[a-z0-9_.-]+\.(png|jpe?g|svg|webp|ico)$/i.test(app.logo))) throw new Error(`${app.id}: Logo 路径无效`);
+    if (typeof app.logo !== 'string' || !(safeHttps(app.logo) || /^public\/(?:logos\/)?[a-z0-9_-][a-z0-9_.-]*\.(png|jpe?g|svg|webp|ico)$/i.test(app.logo))) throw new Error(`${app.id}: Logo 路径无效`);
     if (!Array.isArray(app.tags) || app.tags.length > 4 || app.tags.some(t => typeof t !== 'string' || t.length > 20)) throw new Error(`${app.id}: 标签无效`);
     if (typeof app.featured !== 'boolean' || !Number.isFinite(app.order)) throw new Error(`${app.id}: featured 或 order 无效`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(app.addedAt) || !Number.isFinite(Date.parse(app.addedAt))) throw new Error(`${app.id}: addedAt 日期无效`);

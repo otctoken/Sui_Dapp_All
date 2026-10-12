@@ -31,11 +31,11 @@
 | id | 唯一标识，只能包含小写字母、数字和连字符 |
 | name | 项目名称，最多 80 字符 |
 | description | 简介，最多 240 字符 |
-| category | `lending` 借贷、`trading` 交易、`staking` 质押、`wallet` 钱包、`tools` 基础设施 |
+| category | `lending` 借贷、`trading` 交易、`staking` 质押、`wallet` 钱包、`tools` 基础设施、`navigation` 导航 |
 | url | 项目 HTTPS 地址，点击后在新标签页打开 |
-| logo | `public/logos/文件名.png`，支持 PNG/JPG/SVG/WebP/ICO，也支持 HTTPS 图片地址 |
+| logo | `public/logos/文件名.png` 或 `public/文件名.png`，支持 PNG/JPG/SVG/WebP/ICO，也支持 HTTPS 图片地址 |
 | tags | 最多 4 个标签，每个最多 20 字符 |
-| featured | `true` 为编辑精选，默认排序靠前 |
+| featured | `true` 为编辑精选，展示动态渐变边框、光晕和精选徽标，默认排序靠前；`false` 为普通卡片 |
 | order | 数字，越小越靠前（精选优先） |
 | addedAt | 添加日期 `YYYY-MM-DD`，用于记录收录时间 |
 

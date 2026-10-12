@@ -11,6 +11,14 @@ const apps = [
 ];
 
 test('published catalog validates', () => assert.equal(validateCatalog(publishedApps), publishedApps));
+test('navigation cards accept the shared site logo and retain ID validation', () => {
+  const directory = [{ ...apps[0], id: 'dappnav', category: 'navigation', logo: 'public/logo.png' }];
+  assert.equal(validateCatalog(directory), directory);
+  assert.throws(() => validateCatalog([{ ...directory[0], id: 'DappNav' }]), /id/);
+  for (const logo of ['public/../logo.png', 'public/logos/../../logo.png']) {
+    assert.throws(() => validateCatalog([{ ...directory[0], logo }]), /Logo/);
+  }
+});
 test('rejects duplicate IDs and executable or credentialed URLs', () => {
   assert.throws(() => validateCatalog([...apps, apps[0]]), /重复/);
   for (const url of ['javascript:alert(1)', 'http://example.com', 'https://user:pass@example.com']) {

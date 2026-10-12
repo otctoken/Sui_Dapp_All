@@ -7,3 +7,15 @@
 .brand{gap:8px}.brand-name{font-size:25px;font-weight:650;letter-spacing:-.7px;white-space:nowrap}.brand-accent{color:#59b5ff}
 @media(max-width:560px){.brand{gap:4px}.brand-name{font-size:21px}.social-links a{padding:8px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Featured cards: flowing border, soft glow and a slow light sweep. */
+@property --featured-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+.app-card.featured{isolation:isolate;border-color:transparent;background:linear-gradient(135deg,#152a3e,#171d32 60%,#142536);box-shadow:0 0 24px #43b9ed14;animation:featured-glow 5s ease-in-out infinite}
+.app-card.featured:before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--featured-angle),#346791,#65e0ff,#a59aff,#f3d38e,#65e0ff,#346791);mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none;animation:featured-border 7s linear infinite}
+.app-card.featured:after{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;background:linear-gradient(110deg,transparent 30%,#8cdfff10 45%,#c4f0ff19 50%,transparent 65%);background-size:300% 100%;pointer-events:none;animation:featured-sweep 6s ease-in-out infinite}
+.featured-label{display:flex;align-items:center;gap:7px;margin-bottom:17px;color:#ebd6a4;font-size:11px;font-weight:650;letter-spacing:2px}.featured-label>span:first-child{font-size:17px;color:#ffe5a6;text-shadow:0 0 12px #ffdc8c80;animation:featured-star 4s ease-in-out infinite}.featured-line{height:1px;flex:1;margin-left:5px;background:linear-gradient(90deg,#decc9440,transparent)}
+.featured .card-link{color:#a5e5ff;border-top-color:#68beed30}.featured:hover{box-shadow:0 0 32px #65c9ff26}.featured:nth-child(even):before{animation-delay:-3.5s}.featured:nth-child(even):after{animation-delay:-3s}
+@keyframes featured-border{to{--featured-angle:360deg}}
+@keyframes featured-glow{0%,100%{box-shadow:0 0 20px #43b9ed12}50%{box-shadow:0 0 30px #7f9fff26}}
+@keyframes featured-sweep{0%,15%{background-position:100% 0}85%,100%{background-position:0 0}}
+@keyframes featured-star{0%,100%{opacity:.7;transform:scale(.9)}50%{opacity:1;transform:scale(1.12)}}
+@media(prefers-reduced-motion:reduce){.app-card.featured,.app-card.featured:before,.app-card.featured:after,.featured-label>span:first-child{animation:none!important}}

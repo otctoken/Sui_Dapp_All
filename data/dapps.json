@@ -6,7 +6,7 @@
     "tags": ["借贷", "流动性"], "featured": true, "order": 1, "addedAt": "2026-10-12"
   },
     {
-    "id": "DappNav", "name": "DappNav", "category": "navigation",
+    "id": "dappnav", "name": "DappNav", "category": "navigation",
     "description": "A collection of projects in the Sui ecosystem",
     "url": "https://nav.dappnav.org/", "logo": "public/logo.png",
     "tags": ["navigation"], "featured": true, "order": 1, "addedAt": "2026-10-12"
