@@ -42,5 +42,16 @@
       "gambling"
     ],
     "featured": false
+  },
+      {
+    "id": "transferobject",
+    "name": "Sui transfer",
+    "description": "Transfer any object or coin",
+    "url": "https://transfer.dappnav.org/",
+    "logo": "transfer.png",
+    "tags": [
+      "transfer"
+    ],
+    "featured": false
   }
 ]
