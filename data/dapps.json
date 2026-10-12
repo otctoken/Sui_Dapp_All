@@ -20,5 +20,16 @@
       "gambling"
     ],
     "featured": false
+  },
+     {
+    "id": "UpgradeCapRiskRadar",
+    "name": "UpgradeCap Risk Radar",
+    "description": "Sui Move contracts are upgradeable by default. If upgrade authority is centralized and immediate, a safe protocol today could become malicious code tomorrow. We track the UpgradeCap so you don't have to.",
+    "url": "https://radar.dappnav.org/",
+    "logo": "public/logos/brag.jpg",
+    "tags": [
+      "Radar"
+    ],
+    "featured": false
   }
 ]
