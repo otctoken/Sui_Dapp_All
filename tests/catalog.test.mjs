@@ -2,9 +2,15 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { validateCatalog, filterApps, safeHttps } from '../assets/catalog.mjs';
-const apps = JSON.parse(await readFile(new URL('../data/dapps.json', import.meta.url), 'utf8'));
+const publishedApps = JSON.parse(await readFile(new URL('../data/dapps.json', import.meta.url), 'utf8'));
+// Functional tests use their own fixtures so editors can freely change the live catalog.
+const apps = [
+  { id: 'navi', name: 'NAVI', category: 'lending', description: '借贷测试样例', url: 'https://example.com/navi', logo: 'public/logos/navi.png', tags: ['借贷'], featured: true, order: 1, addedAt: '2026-01-01' },
+  { id: 'cetus', name: 'Cetus', category: 'trading', description: '交易测试样例', url: 'https://example.com/cetus', logo: 'public/logos/cetus.png', tags: ['DEX'], featured: false, order: 2, addedAt: '2026-01-02' },
+  { id: 'aftermath', name: 'Aftermath', category: 'staking', description: '质押测试样例', url: 'https://example.com/aftermath', logo: 'public/logos/aftermath.png', tags: ['质押'], featured: false, order: 3, addedAt: '2026-01-03' },
+];
 
-test('published catalog validates', () => assert.equal(validateCatalog(apps), apps));
+test('published catalog validates', () => assert.equal(validateCatalog(publishedApps), publishedApps));
 test('rejects duplicate IDs and executable or credentialed URLs', () => {
   assert.throws(() => validateCatalog([...apps, apps[0]]), /重复/);
   for (const url of ['javascript:alert(1)', 'http://example.com', 'https://user:pass@example.com']) {
