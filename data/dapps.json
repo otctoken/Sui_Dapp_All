@@ -31,5 +31,16 @@
       "Radar"
     ],
     "featured": false
+  },
+       {
+    "id": "savingsgame",
+    "name": "Savings Game",
+    "description": "No-loss lottery on SUI",
+    "url": "https://savingsgame.dappnav.org/",
+    "logo": "public/logos/sggame.png",
+    "tags": [
+      "gambling"
+    ],
+    "featured": false
   }
 ]
