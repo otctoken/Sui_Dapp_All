@@ -15,9 +15,9 @@
     "name": "SuiAce",
     "description": "SuiNetWork:Blackjack,Baccarat,Dice,Blind Box..",
     "url": "https://suiace.dappnav.org/",
-    "logo": "public/ace.png",
+    "logo": "public/logos/ace.png",
     "tags": [
-      "navigation"
+      "gambling"
     ],
     "featured": true
   },
