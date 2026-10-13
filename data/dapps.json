@@ -8,6 +8,17 @@
     "tags": [
       "navigation"
     ],
+    "featured": false
+  },
+    {
+    "id": "suiace",
+    "name": "SuiAce",
+    "description": "SuiNetWork:Blackjack,Baccarat,Dice,Blind Box..",
+    "url": "https://suiace.dappnav.org/",
+    "logo": "public/ace.png",
+    "tags": [
+      "navigation"
+    ],
     "featured": true
   },
     {
