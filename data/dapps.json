@@ -21,6 +21,17 @@
     ],
     "featured": true
   },
+      {
+    "id": "fomo3d",
+    "name": "Fomo3d",
+    "description": "The classic game Fomo3D returns! on SUI",
+    "url": "https://fomo.dappnav.org/",
+    "logo": "public/logos/fomo.png",
+    "tags": [
+      "gambling"
+    ],
+    "featured": true
+  },
     {
     "id": "brag",
     "name": "Brag",
