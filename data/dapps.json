@@ -33,6 +33,17 @@
     "featured": true
   },
     {
+    "id": "Bkusd",
+    "name": "BKUSD",
+    "description": "A basket.A balance.",
+    "url": "https://bkusd.dappnav.org/",
+    "logo": "public/logo.png",
+    "tags": [
+      "navigation"
+    ],
+    "featured": false
+  },
+    {
     "id": "brag",
     "name": "Brag",
     "description": "P2P gambling games",
