@@ -37,7 +37,7 @@
     "name": "BKUSD",
     "description": "A basket.A balance.",
     "url": "https://bkusd.dappnav.org/",
-    "logo": "public/bkusd.png",
+    "logo": "public/logos/bkusd.png",
     "tags": [
       "navigation"
     ],
