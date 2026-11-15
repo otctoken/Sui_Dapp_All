@@ -1,7 +1,8 @@
 {
   "name": "DappNav",
-  "description": "发现并连接 Sui 生态中的应用。",
+  "description": "发现 Sui 生态应用：DApp 导航、链上游戏、稳定币、储蓄应用和 UpgradeCap 风险工具。",
   "logo": "public/logo.png",
   "telegram": "https://t.me/Sui_Nav",
-  "x": "https://x.com/SuiSgGame"
+  "x": "https://x.com/SuiSgGame",
+  "title": "DappNav · Sui 生态应用导航"
 }

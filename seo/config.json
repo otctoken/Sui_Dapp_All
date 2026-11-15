@@ -1,0 +1,19 @@
+{
+  "origin": "https://www.dappnav.org",
+  "name": "DappNav",
+  "lang": "zh-CN",
+  "image": "/public/logo.png",
+  "pages": [
+    {
+      "path": "/",
+      "title": "DappNav · Sui 生态应用导航",
+      "description": "发现 Sui 生态应用：DApp 导航、链上游戏、稳定币、储蓄应用和 UpgradeCap 风险工具。",
+      "paragraphs": [
+        "发现 Sui 生态应用：DApp 导航、链上游戏、稳定币、储蓄应用和 UpgradeCap 风险工具。"
+      ],
+      "index": true
+    }
+  ],
+  "private": [],
+  "aliases": {}
+}
