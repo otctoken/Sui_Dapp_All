@@ -30,7 +30,7 @@ if (!process.argv.includes('--check')) {
     const apps = JSON.parse(await readFile('data/dapps.json', 'utf8'));
     const { card } = await import('../assets/card.mjs');
     template = template.replace(/(<div class="app-grid" id="app-grid" aria-busy=")true("><\/div>)/, `$1false">${apps.map(card).join('')}</div>`);
-    template = template.replace('<main aria-label="DApp Nav">', '<main aria-label="DApp Nav"><h1>Sui 生态应用导航</h1>');
+    template = template.replace('<main aria-label="DApp Nav">', '<main aria-label="DApp Nav"><h1>Sui DApp Directory</h1>');
     template = template.replace('<p class="status" id="status" role="status">....</p>', '<p class="status" id="status" role="status" hidden></p>');
   }
   const render = (page, index = true, canonicalPath = page.path) => {
