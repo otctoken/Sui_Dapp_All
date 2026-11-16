@@ -1,8 +1,8 @@
 {
   "name": "DappNav",
-  "description": "发现 Sui 生态应用：DApp 导航、链上游戏、稳定币、储蓄应用和 UpgradeCap 风险工具。",
+  "description": "Discover Sui ecosystem apps: DApp directory, on-chain games, stablecoins, savings apps, and UpgradeCap risk tools.",
   "logo": "public/logo.png",
   "telegram": "https://t.me/Sui_Nav",
   "x": "https://x.com/SuiSgGame",
-  "title": "DappNav · Sui 生态应用导航"
+  "title": "DappNav · Sui Ecosystem App Directory"
 }
