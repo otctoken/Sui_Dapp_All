@@ -1,15 +1,15 @@
 {
   "origin": "https://www.dappnav.org",
   "name": "DappNav",
-  "lang": "zh-CN",
+  "lang": "en",
   "image": "/public/logo.png",
   "pages": [
     {
       "path": "/",
-      "title": "DappNav · Sui 生态应用导航",
-      "description": "发现 Sui 生态应用：DApp 导航、链上游戏、稳定币、储蓄应用和 UpgradeCap 风险工具。",
+      "title": "DappNav · Sui Ecosystem App Directory",
+      "description": "Discover Sui ecosystem apps: DApp directory, on-chain games, stablecoins, savings apps, and UpgradeCap risk tools.",
       "paragraphs": [
-        "发现 Sui 生态应用：DApp 导航、链上游戏、稳定币、储蓄应用和 UpgradeCap 风险工具。"
+        "Discover Sui ecosystem apps: DApp directory, on-chain games, stablecoins, savings apps, and UpgradeCap risk tools."
       ],
       "index": true
     }
